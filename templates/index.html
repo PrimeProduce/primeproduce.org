@@ -1,19 +1,5 @@
 {% extends "base.html" %}
 {% block variant %} home{% endblock %}
 {% block content %}
-{%- set placeholder = "<p>[Program list: generated from the program subtabs of this tab, in subtab order.]</p>" %}
-{%- if placeholder not in section.content %}
-{{ throw(message="the Home tab lacks the paragraph that places its program list: " ~ placeholder) }}
-{%- endif %}
-{%- set programs %}
-<div class="programs">
-  {%- for path in section.subsections %}
-  {%- set program = get_section(path=path) %}
-  {%- if program.extra.subtab %}
-  <article>{{ program.content | safe }}</article>
-  {%- endif %}
-  {%- endfor %}
-</div>
-{%- endset %}
-{{ section.content | safe | replace(from=placeholder, to=programs) }}
+{{ section.content | safe }}
 {% endblock %}

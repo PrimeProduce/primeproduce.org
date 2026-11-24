@@ -5,7 +5,6 @@
 {% component nav_items(section, @current_path = "") %}
 {%- for path in section.subsections %}
 {%- set sub = get_section(path=path) %}
-{%- if section.path == "/" and sub.extra.subtab %}{% continue %}{% endif %}
 <li>
   {{ <nav_link section={sub} /> }}
   {%- if sub.subsections and current_path is starting_with(pat=sub.path) %}

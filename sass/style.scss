@@ -178,40 +178,6 @@ a {
   }
 }
 
-.programs {
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: min(60rem, 100% - 2 * $gutter);
-  text-align: left;
-
-  article {
-    display: flow-root;
-    padding: 2rem 0;
-    border-top: 1px solid $rule;
-
-    > * {
-      margin-block: 0 0.5rem;
-    }
-
-    h1 {
-      font-size: 1.15rem;
-      font-weight: 600;
-    }
-
-    @media (min-width: 40rem) {
-      > * {
-        margin-left: 16rem;
-      }
-
-      > p:has(img) {
-        float: left;
-        width: 13rem;
-        margin-left: 0;
-      }
-    }
-  }
-}
-
 .site-footer {
   padding: 4rem $gutter;
   text-align: center;
