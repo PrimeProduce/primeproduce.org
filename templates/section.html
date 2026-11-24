@@ -1,5 +1,5 @@
 {% extends "base.html" %}
 {% block title %}{{ section.title }} · {{ site_title }}{% endblock %}
 {% block content %}
-{{ section.content | safe }}
+{{ <content section={section} /> }}
 {% endblock %}

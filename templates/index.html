@@ -1,5 +1,5 @@
 {% extends "base.html" %}
 {% block variant %} home{% endblock %}
 {% block content %}
-{{ section.content | safe }}
+{{ <content section={section} /> }}
 {% endblock %}

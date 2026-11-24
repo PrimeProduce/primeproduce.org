@@ -1,0 +1,32 @@
+{% component programs() %}
+<div class="programs">
+  {%- for program in load_data(path="data/programs.json") %}
+  <article>
+    {%- if program.Logo %}
+    <img src="{{ program.Logo }}" alt="" loading="lazy">
+    {%- endif %}
+    <div>
+      <h2>{{ program["Program Name"] }}</h2>
+      <p>{{ program.Year }}</p>
+      <ul>
+        {%- for type in program.Type | split(pat=",") %}
+        {%- set type = type | trim %}
+        {%- if type %}
+        <li>{{ type }}</li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+      <p>{{ program.Mission }}</p>
+    </div>
+    {%- if program.Website %}
+    <a href="{{ program.Website }}" target="_blank" rel="noopener">Learn More</a>
+    {%- endif %}
+  </article>
+  {%- endfor %}
+</div>
+{% endcomponent programs %}
+
+{% component content(section) %}
+{%- set programs %}{{ <programs /> }}{% endset %}
+{{ section.content | safe | replace(from="<p>{{ programs }}</p>", to=programs) }}
+{% endcomponent content %}

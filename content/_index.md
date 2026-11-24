@@ -26,6 +26,10 @@ Check us out on [Charity Navigator](https://www.charitynavigator.org/ein/2611889
 
 You can donate to our programs directly via their websites below (recommended) or by visiting our [donation portal](https://www.aplos.com/aws/give/PrimeProduceLimited/PPLdonations).
 
+*(Please note that some programs listed are no longer active or have graduated out from our fiscal sponsorship program-- we list them here to share some of the interesting programming we have supported over the years\!)*
+
+{{ programs }}
+
 ---
 
 # Learn More

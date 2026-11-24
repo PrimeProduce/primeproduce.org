@@ -2,6 +2,8 @@ $text: #444;
 $background: #fcfcff;
 $link: #1da2ff;
 $accent: #51535d;
+$badge: #1a76d2;
+$muted: #616a78;
 $rule: #e6e6ee;
 $measure: 44rem;
 $gutter: 1.25rem;
@@ -175,6 +177,83 @@ a {
 
   img {
     margin-inline: auto;
+  }
+}
+
+.programs {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(75rem, 100% - 2 * $gutter);
+  text-align: left;
+
+  article {
+    display: grid;
+    gap: 1rem 3rem;
+    align-items: start;
+    padding: 2rem 0;
+    border-top: 1px solid $rule;
+  }
+
+  img {
+    width: 13rem;
+    margin: 0;
+  }
+
+  div > * {
+    margin-block: 0 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0.2rem 0.75rem;
+    border-radius: 0.2rem;
+    background: $badge;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  ul + p {
+    color: $muted;
+    font-size: 0.85rem;
+    white-space: pre-line;
+  }
+
+  article > a {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    background: $accent;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  @media (min-width: 56rem) {
+    article {
+      grid-template-columns: 13rem 1fr 12.5rem;
+    }
+
+    div {
+      grid-column: 2;
+    }
+
+    article > a {
+      grid-column: 3;
+      margin-top: 1.5rem;
+    }
   }
 }
 
