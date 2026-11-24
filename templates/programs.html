@@ -3,7 +3,7 @@
   {%- for program in load_data(path="data/programs.json") %}
   <article>
     {%- if program.Logo %}
-    <img src="{{ program.Logo }}" alt="" loading="lazy">
+    <img src="{{ get_url(path=program.Logo) }}" alt="" loading="lazy">
     {%- endif %}
     <div>
       <h2>{{ program["Program Name"] }}</h2>
