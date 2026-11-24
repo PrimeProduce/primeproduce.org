@@ -1,6 +1,6 @@
 +++
 title = "Village Fellowship"
-weight = 23
+weight = 5
 +++
 
 # Our Village Fellowship

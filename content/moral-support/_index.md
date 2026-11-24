@@ -1,6 +1,6 @@
 +++
 title = "Moral Support"
-weight = 21
+weight = 3
 +++
 
 # Seriously, we’re here.

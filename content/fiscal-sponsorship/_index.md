@@ -1,6 +1,6 @@
 +++
 title = "Fiscal Sponsorship"
-weight = 19
+weight = 1
 +++
 
 # Fiscal Sponsorship

@@ -1,6 +1,6 @@
 +++
 title = "Services"
-weight = 20
+weight = 2
 +++
 
 # Services

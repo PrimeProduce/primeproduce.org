@@ -1,6 +1,6 @@
 +++
 title = "Values"
-weight = 22
+weight = 4
 +++
 
 # How we practice.

@@ -1,6 +1,6 @@
 +++
 title = "Community Events Series"
-weight = 24
+weight = 6
 +++
 
 # Our Community Event Series

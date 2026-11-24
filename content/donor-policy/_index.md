@@ -1,6 +1,6 @@
 +++
 title = "Donor Policy"
-weight = 25
+weight = 7
 +++
 
 # Our Donor Policy

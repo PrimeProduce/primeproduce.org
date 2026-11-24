@@ -28,12 +28,6 @@ You can donate to our programs directly via their websites below (recommended) o
 
 ---
 
-# Check out a few of our featured programs:
-
-*(Please note that some programs listed are no longer active or have graduated out from our fiscal sponsorship program-- we list them here to share some of the interesting programming we have supported over the years\!)*
-
-\[Program list: generated from the program subtabs of this tab, in subtab order.\]
-
 # Learn More
 
 **Financial Reports**
