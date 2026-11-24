@@ -1,0 +1,39 @@
+{%- set home = get_section(path="_index.md") -%}
+{%- set site_title = home.extra.site_title -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_title }}{% endblock %}</title>
+  <link rel="icon" href="{{ get_url(path="logo.jpg") }}">
+  <link rel="stylesheet" href="{{ get_url(path="style.css", cachebust=true) }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ home.permalink }}">
+      <img src="{{ get_url(path="logo.jpg") }}" alt="" width="40" height="40">
+      {{ site_title }}
+    </a>
+    <nav>
+      <ul>
+        {{- <nav_items section={home} /> }}
+        <li><a href="http://eepurl.com/gu7xv" target="_blank" rel="noopener">Stay Connected</a></li>
+        <li><a href="https://www.aplos.com/aws/give/PrimeProduceLimited/PPLdonations" target="_blank" rel="noopener">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content{% block variant %}{% endblock %}">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <address>
+      Prime Produce Limited<br>
+      424 W 54th Street<br>
+      New York, NY 10019
+    </address>
+    <p><a href="mailto:prime@primeproduce.org">prime@primeproduce.org</a></p>
+    <p>EIN: 26-1188925</p>
+  </footer>
+</body>
+</html>

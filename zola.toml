@@ -1,0 +1,6 @@
+base_url = "https://primeproduce.org"
+compile_sass = true
+skip_content_templating = ["**/*.md"]
+
+[markdown]
+external_links_target_blank = true
